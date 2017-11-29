@@ -11,14 +11,24 @@
               "ernPlatformVersion": "1000.0.0",
               "isReleased": false,
               "binary": null,
-              "yarnlock": null,
-              "nativeDeps": [],
+              "yarnlock": "2f71cc3efcec1fbc808b60eddb423880edbb6ca6",
+              "nativeDeps": [
+                "react-native@0.50.1"
+              ],
               "miniApps": {
-                "container": [],
+                "container": [
+                  "moviedetailsminiapp@0.0.7"
+                ],
                 "codePush": []
-              }
+              },
+              "containerVersion": "1.0.0"
             }
-          ]
+          ],
+          "config": {
+            "containerGenerator": {
+              "containerVersion": "1.0.0"
+            }
+          }
         }
       ]
     }
