@@ -1,0 +1,2395 @@
+{
+  "config": {
+    "manifest": {
+      "override": {
+        "url": "git@gecgithub01.ghostatron.com:react-native/ern-ghostatron-manifest.git",
+        "type": "partial"
+      }
+    }
+  },
+  "nativeApps": [
+    {
+      "name": "ghostatron",
+      "platforms": [
+        {
+          "name": "android",
+          "config": {
+            "codePush": {
+              "deployments": [
+                "QA",
+                "Development,",
+                "Production",
+                "Beta"
+              ]
+            },
+            "containerGenerator": {
+              "name": "maven",
+              "mavenRepositoryUrl": "http://mobilebuild.homeoffice.wal-mart.com:8081/nexus/content/repositories/hosted",
+              "containerVersion": "1.16.52",
+              "publishers": [
+                {
+                  "name": "github",
+                  "url": "git@gecgithub01.ghostatron.com:react-native/ghostatron-react-container-android.git"
+                },
+                {
+                  "name": "maven",
+                  "url": "http://mobilebuild.homeoffice.wal-mart.com:8081/nexus/content/repositories/hosted"
+                }
+              ]
+            }
+          },
+          "versions": [
+            {
+              "name": "17.7.0",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.9",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.14",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.12",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.0",
+                  "@ghostatron/react-native-thankyou@2.0.0"
+                ],
+                "codePush": []
+              }
+            },
+            {
+              "name": "17.8.0",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.14",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.12",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-thankyou@2.0.2",
+                  "@ghostatron/react-native-cart@4.0.2"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-thankyou@2.0.5",
+                    "@ghostatron/react-native-cart@4.0.5"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "17.8.1",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.14",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.12",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-thankyou@2.0.2",
+                  "@ghostatron/react-native-cart@4.0.2"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-thankyou@2.0.5",
+                    "@ghostatron/react-native-cart@4.0.5"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.5",
+                    "@ghostatron/react-native-thankyou@2.0.8"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.5",
+                    "@ghostatron/react-native-thankyou@2.0.9"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.5",
+                    "@ghostatron/react-native-thankyou@2.0.10"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "17.9.0",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.14",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.12",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.5",
+                  "@ghostatron/react-native-thankyou@2.0.5"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-cart@4.0.5",
+                    "@ghostatron/react-native-thankyou@2.0.8"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.5",
+                    "@ghostatron/react-native-thankyou@2.0.9"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.5",
+                    "@ghostatron/react-native-thankyou@2.0.10"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "17.10.0",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.14",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.12",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-thankyou@2.0.8",
+                  "@ghostatron/react-native-cart@4.0.5"
+                ],
+                "codePush": []
+              }
+            },
+            {
+              "name": "17.11.0",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.19",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.13",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-thankyou@2.0.13",
+                  "@ghostatron/react-native-cart@4.0.7"
+                ],
+                "codePush": []
+              }
+            },
+            {
+              "name": "17.12.0",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.19",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.13",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.7",
+                  "@ghostatron/react-native-thankyou@2.0.14",
+                  "@ghostatron/BackToSchool@0.3.0"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/BackToSchool@0.3.4",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "17.13.0",
+              "ernPlatformVersion": "0.2.0",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.19",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.13",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.7",
+                  "@ghostatron/react-native-thankyou@2.0.14",
+                  "@ghostatron/BackToSchool@0.3.0"
+                ],
+                "codePush": []
+              }
+            },
+            {
+              "name": "17.14.0",
+              "ernPlatformVersion": "0.3.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.5.0",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.0",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.0",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.1",
+                "@ghostatron/react-native-ghostatronstate-api@0.18.0",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.3",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.2",
+                "@ghostatron/react-native-easyreturnsstate-api@1.2.2",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.3",
+                "@ghostatron/react-native-payment-api@0.0.4",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.10",
+                  "@ghostatron/react-native-thankyou@2.0.16",
+                  "@ghostatron/BackToSchool@0.6.0",
+                  "@ghostatron/RNEasyReturns@0.0.32"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-cart@4.0.11",
+                    "@ghostatron/react-native-thankyou@2.0.16",
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/RNEasyReturns@0.0.32"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.19",
+                    "@ghostatron/react-native-thankyou@2.0.16",
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/RNEasyReturns@0.0.32"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "17.15.0",
+              "ernPlatformVersion": "0.3.2",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.5.3",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.0",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.1",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.1",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.3",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.2",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.3",
+                "@ghostatron/react-native-payment-api@0.0.5",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1",
+                "@ghostatron/react-native-easyreturnsstate-api@1.3.0",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.0"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.12",
+                  "@ghostatron/react-native-thankyou@2.0.19",
+                  "@ghostatron/BackToSchool@0.6.0",
+                  "@ghostatron/RNEasyReturns@0.0.47"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-thankyou@2.0.23",
+                    "@ghostatron/react-native-cart@4.0.12",
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/RNEasyReturns@0.0.47"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.19",
+                    "@ghostatron/react-native-thankyou@2.0.23",
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/RNEasyReturns@0.0.47"
+                  ]
+                ]
+              },
+              "containerVersion": "1.16.10"
+            },
+            {
+              "name": "17.16.0",
+              "ernPlatformVersion": "0.4.1",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "90a3d599917ff4f269db20d50ee70b925475d1de",
+              "nativeDeps": [
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.0",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.1",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.1",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.3",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.2",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.3",
+                "@ghostatron/react-native-payment-api@0.0.5",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1",
+                "@ghostatron/react-native-easyreturnsstate-api@1.3.0",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.0",
+                "@ghostatron/react-native-electrode-bridge@1.5.4"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.13",
+                  "@ghostatron/react-native-thankyou@2.0.19",
+                  "@ghostatron/BackToSchool@0.6.0",
+                  "@ghostatron/RNEasyReturns@0.0.47"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-cart@4.0.19",
+                    "@ghostatron/react-native-thankyou@2.0.19",
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/RNEasyReturns@0.0.47"
+                  ]
+                ]
+              },
+              "containerVersion": "1.16.23"
+            },
+            {
+              "name": "17.17.0",
+              "ernPlatformVersion": "0.6.0",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "e86c38a0e74caae9ea7070f1df7a7c21e86033fb",
+              "nativeDeps": [
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.0",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.1",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.1",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.3",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.2",
+                "@ghostatron/react-native-payment-api@0.0.5",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.0",
+                "@ghostatron/react-native-electrode-bridge@1.5.6",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.4",
+                "@ghostatron/react-native-easyreturns-api@1.4.4"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.16",
+                  "@ghostatron/react-native-thankyou@2.0.25",
+                  "@ghostatron/BackToSchool@0.6.0",
+                  "@ghostatron/RNEasyReturns@0.0.54",
+                  "@ghostatron/react-native-checkout@0.0.42"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-checkout@0.0.45",
+                    "@ghostatron/react-native-cart@4.0.16",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/RNEasyReturns@0.0.54"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.45",
+                    "@ghostatron/react-native-cart@4.0.16",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/RNEasyReturns@0.0.54"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.19",
+                    "@ghostatron/react-native-checkout@0.0.45",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/RNEasyReturns@0.0.54"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.46",
+                    "@ghostatron/react-native-cart@4.0.19",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/RNEasyReturns@0.0.54"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.46",
+                    "@ghostatron/react-native-cart@4.0.19",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/RNEasyReturns@0.0.54"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.48",
+                    "@ghostatron/react-native-cart@4.0.19",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/RNEasyReturns@0.0.54"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.49",
+                    "@ghostatron/react-native-cart@4.0.19",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/RNEasyReturns@0.0.54"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-checkout@0.0.52",
+                    "@ghostatron/react-native-thankyou@2.0.26",
+                    "@ghostatron/react-native-cart@4.0.24"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-checkout@0.0.52",
+                    "@ghostatron/react-native-thankyou@2.0.26",
+                    "@ghostatron/react-native-cart@4.0.24"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-checkout@0.0.52",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.53",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.54",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.55",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.56",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.59",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.60",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/react-native-checkout@0.0.60",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.61",
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.62",
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.63",
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.30",
+                    "@ghostatron/react-native-checkout@0.0.66",
+                    "@ghostatron/react-native-thankyou@2.0.28",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.69",
+                    "@ghostatron/react-native-cart@4.0.30",
+                    "@ghostatron/react-native-thankyou@2.0.28",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-checkout@0.0.70",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.71",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.73",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.74",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.74",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.75",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.77",
+                    "@ghostatron/react-native-cart@4.0.34",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.77",
+                    "@ghostatron/react-native-cart@4.0.35",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.78",
+                    "@ghostatron/react-native-cart@4.0.35",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.7.6",
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.83",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.6",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.84",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.6",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ]
+                ]
+              },
+              "containerVersion": "1.16.31"
+            },
+            {
+              "name": "17.18.0",
+              "ernPlatformVersion": "0.7.0",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "414b57a568c381dee39e3ba3e69ca0fe25fca5ec",
+              "nativeDeps": [
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.1",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.3",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.2",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.4",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.3",
+                "@ghostatron/react-native-payment-api@0.0.6",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.2",
+                "react-native-electrode-bridge@1.5.9",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.6",
+                "@ghostatron/react-native-easyreturns-api@1.5.0"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.26",
+                  "@ghostatron/react-native-thankyou@2.0.27",
+                  "@ghostatron/RNEasyReturns@0.0.56",
+                  "@ghostatron/react-native-checkout@0.0.65"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-checkout@0.0.60",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.27",
+                    "@ghostatron/react-native-checkout@0.0.60",
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.28",
+                    "@ghostatron/react-native-checkout@0.0.65",
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.30",
+                    "@ghostatron/react-native-checkout@0.0.66",
+                    "@ghostatron/react-native-thankyou@2.0.28",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.31",
+                    "@ghostatron/react-native-checkout@0.0.68",
+                    "@ghostatron/react-native-thankyou@2.0.28",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.32",
+                    "@ghostatron/react-native-checkout@0.0.69",
+                    "@ghostatron/react-native-thankyou@2.0.28",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-checkout@0.0.70",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.71",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.73",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.74",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.74",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.75",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.77",
+                    "@ghostatron/react-native-cart@4.0.34",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.77",
+                    "@ghostatron/react-native-cart@4.0.35",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.78",
+                    "@ghostatron/react-native-cart@4.0.35",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.82",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.83",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ]
+                ]
+              },
+              "containerVersion": "1.16.37"
+            },
+            {
+              "name": "17.19.0",
+              "ernPlatformVersion": "0.7.0",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "734fa6adcb7f2e7443eadcfa68b0005fc91f81d3",
+              "nativeDeps": [
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.1",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.3",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.4",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.3",
+                "@ghostatron/react-native-payment-api@0.0.6",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.2",
+                "react-native-electrode-bridge@1.5.9",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.6",
+                "@ghostatron/react-native-easyreturns-api@1.5.2",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.4"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.33",
+                  "@ghostatron/react-native-thankyou@2.0.30",
+                  "@ghostatron/RNEasyReturns@0.0.63",
+                  "@ghostatron/react-native-checkout@0.0.75"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-cart@4.0.32",
+                    "@ghostatron/react-native-checkout@0.0.71",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.61"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-checkout@0.0.71",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.61"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.73",
+                    "@ghostatron/RNEasyReturns@0.0.63",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.74",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.74",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.75",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.76",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.77",
+                    "@ghostatron/react-native-cart@4.0.34",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.77",
+                    "@ghostatron/react-native-cart@4.0.35",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.78",
+                    "@ghostatron/react-native-cart@4.0.35",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ],
+                  [
+                    "@ghostatron/RNEasyReturns@0.0.66",
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30"
+                  ],
+                  [
+                    "@ghostatron/RNEasyReturns@0.0.66",
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30"
+                  ],
+                  [
+                    "@ghostatron/RNEasyReturns@0.0.67",
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.80",
+                    "@ghostatron/RNEasyReturns@0.0.67",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.82",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.67"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.83",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.67"
+                  ]
+                ]
+              },
+              "containerVersion": "1.16.42"
+            },
+            {
+              "name": "17.18.1",
+              "ernPlatformVersion": "0.8.0",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "883d639b11e269ea607a939403c04ecb9c2eba12",
+              "nativeDeps": [
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.1",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.3",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.2",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.4",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.3",
+                "@ghostatron/react-native-payment-api@0.0.6",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.2",
+                "react-native-electrode-bridge@1.5.9",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.6",
+                "@ghostatron/react-native-easyreturns-api@1.5.0"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.26",
+                  "@ghostatron/react-native-thankyou@2.0.27",
+                  "@ghostatron/RNEasyReturns@0.0.56",
+                  "@ghostatron/react-native-checkout@0.0.65"
+                ],
+                "codePush": []
+              },
+              "containerVersion": "1.16.37"
+            },
+            {
+              "name": "17.20.0",
+              "ernPlatformVersion": "0.8.0",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "6788b5a55b387bf590ae4497362440ca96e59a2f",
+              "nativeDeps": [
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.1",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.3",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.4",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.3",
+                "@ghostatron/react-native-payment-api@0.0.6",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.2",
+                "react-native-electrode-bridge@1.5.9",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.6",
+                "@ghostatron/react-native-easyreturns-api@1.5.2",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.4"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.36",
+                  "@ghostatron/react-native-thankyou@2.0.30",
+                  "@ghostatron/RNEasyReturns@0.0.67",
+                  "@ghostatron/react-native-checkout@0.0.83"
+                ],
+                "codePush": []
+              },
+              "containerVersion": "1.16.44"
+            },
+            {
+              "name": "17.19.1",
+              "ernPlatformVersion": "0.9.0",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "b95aca38e520197f8df17e78dafc446d5b49b6df",
+              "nativeDeps": [
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.1",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.3",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.4",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.3",
+                "@ghostatron/react-native-payment-api@0.0.6",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.2",
+                "react-native-electrode-bridge@1.5.9",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.6",
+                "@ghostatron/react-native-easyreturns-api@1.5.2",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.4"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.33",
+                  "@ghostatron/react-native-thankyou@2.0.30",
+                  "@ghostatron/RNEasyReturns@0.0.63",
+                  "@ghostatron/react-native-checkout@0.0.75"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-checkout@0.0.82",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ]
+                ]
+              },
+              "containerVersion": "1.16.42"
+            },
+            {
+              "name": "17.21.0",
+              "ernPlatformVersion": "0.7.0",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "cb5d18f6874ed44d6c73dd4b257015c3633147f6",
+              "nativeDeps": [
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.1",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.3",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.4",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.3",
+                "@ghostatron/react-native-payment-api@0.0.6",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.2",
+                "react-native-electrode-bridge@1.5.9",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.6",
+                "@ghostatron/react-native-easyreturns-api@1.5.2",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.4"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.37",
+                  "@ghostatron/react-native-thankyou@2.0.33",
+                  "@ghostatron/RNEasyReturns@0.0.67",
+                  "@ghostatron/react-native-checkout@0.0.86"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-checkout@0.0.86",
+                    "@ghostatron/react-native-cart@4.0.37",
+                    "@ghostatron/react-native-thankyou@2.0.33",
+                    "@ghostatron/RNEasyReturns@0.0.70"
+                  ]
+                ]
+              },
+              "containerVersion": "1.16.52"
+            },
+            {
+              "name": "17.22.0",
+              "ernPlatformVersion": "0.10.2",
+              "isReleased": false,
+              "binary": null,
+              "yarnlock": "b8c7d3a0f8615161c59353c07f2e1f2c7cb49a22",
+              "nativeDeps": [
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.1",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.3",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.3",
+                "@ghostatron/react-native-payment-api@0.0.6",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-stack-tracer@0.1.1",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.2",
+                "react-native-electrode-bridge@1.5.9",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.6",
+                "@ghostatron/react-native-easyreturns-api@1.5.2",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.4",
+                "@ghostatron/react-native-metaheader-api@0.1.0",
+                "@ghostatron/react-native-ghostatron-location-api@0.0.2",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.6"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.37",
+                  "@ghostatron/react-native-thankyou@2.0.33",
+                  "@ghostatron/RNEasyReturns@0.0.72",
+                  "@ghostatron/react-native-checkout@0.0.86"
+                ],
+                "codePush": []
+              },
+              "containerVersion": "1.16.50"
+            }
+          ]
+        },
+        {
+          "name": "ios",
+          "config": {
+            "codePush": {
+              "deployments": [
+                "Staging",
+                "Production"
+              ]
+            },
+            "containerGenerator": {
+              "name": "github",
+              "targetRepoUrl": "git@gecgithub01.ghostatron.com:react-native/ghostatron-react-container-ios.git",
+              "ignoreRnpmAssets": true,
+              "containerVersion": "7.0.36",
+              "publishers": [
+                {
+                  "name": "github",
+                  "url": "git@gecgithub01.ghostatron.com:react-native/ghostatron-react-container-ios.git"
+                }
+              ]
+            }
+          },
+          "versions": [
+            {
+              "name": "17.7",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.9",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.14",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.12",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.0",
+                  "@ghostatron/react-native-thankyou@2.0.0"
+                ],
+                "codePush": []
+              }
+            },
+            {
+              "name": "17.8",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.14",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.12",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-thankyou@2.0.2",
+                  "@ghostatron/react-native-cart@4.0.2"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-thankyou@2.0.5",
+                    "@ghostatron/react-native-cart@4.0.5"
+                  ],
+                  [
+                    "@ghostatron/react-native-thankyou@2.0.10",
+                    "@ghostatron/react-native-cart@4.0.5"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "17.9",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.14",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.12",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.4",
+                  "@ghostatron/react-native-thankyou@2.0.5"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-cart@4.0.5",
+                    "@ghostatron/react-native-thankyou@2.0.10"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "17.10",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.14",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.12",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-thankyou@2.0.8",
+                  "@ghostatron/react-native-cart@4.0.5"
+                ],
+                "codePush": []
+              }
+            },
+            {
+              "name": "17.11",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.19",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.13",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-thankyou@2.0.13",
+                  "@ghostatron/react-native-cart@4.0.7"
+                ],
+                "codePush": []
+              }
+            },
+            {
+              "name": "17.12",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.19",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.13",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.7",
+                  "@ghostatron/react-native-thankyou@2.0.14",
+                  "@ghostatron/BackToSchool@0.2.8"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/BackToSchool@0.3.4",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.5.1",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.5.2",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.5.3",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.5.4",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "17.12.1",
+              "ernPlatformVersion": "0.1",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.19",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.13",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.7",
+                  "@ghostatron/react-native-thankyou@2.0.14",
+                  "@ghostatron/BackToSchool@0.2.8"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/BackToSchool@0.5.2",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.5.3",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.6.0",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "17.13",
+              "ernPlatformVersion": "0.2.0",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.4.12",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.17.8",
+                "@ghostatron/react-native-ghostatroncookie-api@0.17.19",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.17.13",
+                "@ghostatron/react-native-ghostatronstate-api@0.17.10",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.17.8",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.7",
+                  "@ghostatron/react-native-thankyou@2.0.14",
+                  "@ghostatron/BackToSchool@0.6.0"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/BackToSchool@0.6.1",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.7.0",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.7.2",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/react-native-cart@4.0.7",
+                    "@ghostatron/react-native-thankyou@2.0.14"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "17.14",
+              "ernPlatformVersion": "0.3.0",
+              "isReleased": true,
+              "binary": null,
+              "nativeDeps": [
+                "@ghostatron/react-native-electrode-bridge@1.5.0",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.0",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.0",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.1",
+                "@ghostatron/react-native-ghostatronstate-api@0.18.0",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.3",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.2",
+                "@ghostatron/react-native-easyreturnsstate-api@1.2.2",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.3",
+                "@ghostatron/react-native-payment-api@0.0.4",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.11",
+                  "@ghostatron/react-native-thankyou@2.0.16",
+                  "@ghostatron/BackToSchool@0.7.3",
+                  "@ghostatron/RNEasyReturns@0.0.32"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/RNEasyReturns@0.0.36",
+                    "@ghostatron/react-native-cart@4.0.10",
+                    "@ghostatron/react-native-thankyou@2.0.16",
+                    "@ghostatron/BackToSchool@0.7.3"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.11",
+                    "@ghostatron/RNEasyReturns@0.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.16",
+                    "@ghostatron/BackToSchool@0.7.3"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.11",
+                    "@ghostatron/RNEasyReturns@0.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.16",
+                    "@ghostatron/BackToSchool@0.7.3"
+                  ]
+                ]
+              }
+            },
+            {
+              "name": "17.15",
+              "ernPlatformVersion": "0.4.0",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "9d2a949f09caf8d21e2e23961c260de6357247b2",
+              "nativeDeps": [
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.0",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.0",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.1",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.3",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.2",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.3",
+                "@ghostatron/react-native-payment-api@0.0.4",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "@ghostatron/react-native-easyreturnsstate-api@1.3.0",
+                "@ghostatron/react-native-electrode-bridge@1.5.3",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.0"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.12",
+                  "@ghostatron/react-native-thankyou@2.0.19",
+                  "@ghostatron/BackToSchool@0.7.3",
+                  "@ghostatron/RNEasyReturns@0.0.46"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-thankyou@2.0.18",
+                    "@ghostatron/react-native-cart@4.0.12",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/RNEasyReturns@0.0.46"
+                  ],
+                  [
+                    "@ghostatron/react-native-thankyou@2.0.23",
+                    "@ghostatron/react-native-cart@4.0.12",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/RNEasyReturns@0.0.46"
+                  ],
+                  [
+                    "@ghostatron/RNEasyReturns@0.0.47",
+                    "@ghostatron/react-native-thankyou@2.0.23",
+                    "@ghostatron/react-native-cart@4.0.12",
+                    "@ghostatron/BackToSchool@0.7.3"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.19",
+                    "@ghostatron/RNEasyReturns@0.0.47",
+                    "@ghostatron/react-native-thankyou@2.0.23",
+                    "@ghostatron/BackToSchool@0.7.3"
+                  ]
+                ]
+              },
+              "containerVersion": "3.0.21"
+            },
+            {
+              "name": "17.16",
+              "ernPlatformVersion": "0.4.1",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "b6a673a83ba905729d97d7c11ca764c9392870d1",
+              "nativeDeps": [
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.0",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.0",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.1",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.3",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.2",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "@ghostatron/react-native-easyreturnsstate-api@1.3.0",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.0",
+                "react-native-keep-awake@2.0.4",
+                "react-native-linear-gradient@2.1.0",
+                "react-native-llimageview@0.0.5",
+                "react-native-llphotoassets@0.0.1",
+                "react-native-lluploader@0.0.3",
+                "react-native-location@0.27.0",
+                "react-native-maps@0.13.1",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.4",
+                "@ghostatron/react-native-payment-api@0.0.5",
+                "@ghostatron/react-native-electrode-bridge@1.5.3"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.13",
+                  "@ghostatron/react-native-thankyou@2.0.19",
+                  "@ghostatron/BackToSchool@0.7.3",
+                  "@ghostatron/RNEasyReturns@0.0.46",
+                  "@ghostatron/react-native-photo@0.1.11",
+                  "@ghostatron/react-native-checkout@0.0.35"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-checkout@0.0.33",
+                    "@ghostatron/react-native-cart@4.0.13",
+                    "@ghostatron/react-native-thankyou@2.0.17",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/RNEasyReturns@0.0.46",
+                    "@ghostatron/react-native-photo@0.1.11"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.34",
+                    "@ghostatron/react-native-cart@4.0.13",
+                    "@ghostatron/react-native-thankyou@2.0.17",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/RNEasyReturns@0.0.46",
+                    "@ghostatron/react-native-photo@0.1.11"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.40",
+                    "@ghostatron/RNEasyReturns@0.0.47",
+                    "@ghostatron/react-native-thankyou@2.0.23",
+                    "@ghostatron/react-native-cart@4.0.13",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/react-native-photo@0.1.11"
+                  ],
+                  [
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/react-native-checkout@0.0.40",
+                    "@ghostatron/RNEasyReturns@0.0.47",
+                    "@ghostatron/react-native-cart@4.0.13",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/react-native-photo@0.1.11"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.43",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/RNEasyReturns@0.0.47",
+                    "@ghostatron/react-native-cart@4.0.13",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/react-native-photo@0.1.11"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.19",
+                    "@ghostatron/react-native-checkout@0.0.43",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/RNEasyReturns@0.0.47",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/react-native-photo@0.1.11"
+                  ]
+                ]
+              },
+              "containerVersion": "4.0.16"
+            },
+            {
+              "name": "17.17",
+              "ernPlatformVersion": "0.5.1",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "2be3d1136c70ae9f70960e53cd46e342901cc8f6",
+              "nativeDeps": [
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.0",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.1",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.3",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.2",
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.0",
+                "react-native-keep-awake@2.0.4",
+                "react-native-linear-gradient@2.1.0",
+                "react-native-llimageview@0.0.5",
+                "react-native-llphotoassets@0.0.1",
+                "react-native-lluploader@0.0.3",
+                "react-native-location@0.27.0",
+                "react-native-maps@0.13.1",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.4",
+                "@ghostatron/react-native-payment-api@0.0.5",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.1",
+                "@ghostatron/react-native-easyreturns-api@1.4.4",
+                "@ghostatron/react-native-electrode-bridge@1.5.3"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.16",
+                  "@ghostatron/react-native-thankyou@2.0.25",
+                  "@ghostatron/BackToSchool@0.7.3",
+                  "@ghostatron/RNEasyReturns@0.0.54",
+                  "@ghostatron/react-native-photo@0.1.12",
+                  "@ghostatron/react-native-checkout@0.0.42"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-checkout@0.0.45",
+                    "@ghostatron/react-native-cart@4.0.16",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/RNEasyReturns@0.0.54",
+                    "@ghostatron/react-native-photo@0.1.12"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.46",
+                    "@ghostatron/react-native-cart@4.0.16",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/RNEasyReturns@0.0.54",
+                    "@ghostatron/react-native-photo@0.1.12"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.48",
+                    "@ghostatron/react-native-cart@4.0.16",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/RNEasyReturns@0.0.54",
+                    "@ghostatron/react-native-photo@0.1.12"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.49",
+                    "@ghostatron/react-native-cart@4.0.16",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/RNEasyReturns@0.0.54",
+                    "@ghostatron/react-native-photo@0.1.12"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.20",
+                    "@ghostatron/react-native-checkout@0.0.49",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/RNEasyReturns@0.0.54",
+                    "@ghostatron/react-native-photo@0.1.12"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.21",
+                    "@ghostatron/react-native-checkout@0.0.49",
+                    "@ghostatron/react-native-thankyou@2.0.25",
+                    "@ghostatron/BackToSchool@0.7.3",
+                    "@ghostatron/RNEasyReturns@0.0.54",
+                    "@ghostatron/react-native-photo@0.1.12"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-checkout@0.0.52",
+                    "@ghostatron/react-native-thankyou@2.0.26",
+                    "@ghostatron/react-native-cart@4.0.24"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-checkout@0.0.52",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.53",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.54",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.55",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.56",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.59",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.60",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-thankyou@2.0.26"
+                  ],
+                  [
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/react-native-checkout@0.0.60",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.61",
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.62",
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.63",
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.30",
+                    "@ghostatron/react-native-checkout@0.0.66",
+                    "@ghostatron/react-native-thankyou@2.0.28",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.68",
+                    "@ghostatron/react-native-cart@4.0.31",
+                    "@ghostatron/react-native-thankyou@2.0.28",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-checkout@0.0.70",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.71",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.73",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.74",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.75",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-checkout@0.0.76",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.77",
+                    "@ghostatron/react-native-cart@4.0.34",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.77",
+                    "@ghostatron/react-native-cart@4.0.35",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.78",
+                    "@ghostatron/react-native-cart@4.0.35",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.5",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.7.6",
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/BackToSchool@0.7.7",
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.80",
+                    "@ghostatron/BackToSchool@0.7.7",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.83",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.7",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.84",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/BackToSchool@0.7.7",
+                    "@ghostatron/react-native-photo@0.1.13",
+                    "@ghostatron/RNEasyReturns@0.0.56"
+                  ]
+                ]
+              },
+              "containerVersion": "5.0.15"
+            },
+            {
+              "name": "17.18",
+              "ernPlatformVersion": "0.7.0",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "2be3d1136c70ae9f70960e53cd46e342901cc8f6",
+              "nativeDeps": [
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-keep-awake@2.0.4",
+                "react-native-linear-gradient@2.1.0",
+                "react-native-llimageview@0.0.5",
+                "react-native-llphotoassets@0.0.1",
+                "react-native-lluploader@0.0.3",
+                "react-native-location@0.27.0",
+                "react-native-maps@0.13.1",
+                "@ghostatron/react-native-payment-api@0.0.6",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.1",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.3",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.2",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.5",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.2",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.1",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.4",
+                "react-native-electrode-bridge@1.5.9",
+                "@ghostatron/react-native-easyreturns-api@1.5.0"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.26",
+                  "@ghostatron/react-native-thankyou@2.0.27",
+                  "@ghostatron/RNEasyReturns@0.0.56",
+                  "@ghostatron/react-native-photo@0.1.13",
+                  "@ghostatron/react-native-checkout@0.0.65"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-checkout@0.0.60",
+                    "@ghostatron/react-native-cart@4.0.25",
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.27",
+                    "@ghostatron/react-native-checkout@0.0.60",
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.65",
+                    "@ghostatron/react-native-cart@4.0.28",
+                    "@ghostatron/react-native-thankyou@2.0.27",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.30",
+                    "@ghostatron/react-native-checkout@0.0.66",
+                    "@ghostatron/react-native-thankyou@2.0.28",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.68",
+                    "@ghostatron/react-native-cart@4.0.31",
+                    "@ghostatron/react-native-thankyou@2.0.28",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-checkout@0.0.70",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.71",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.73",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.74",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.75",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.77",
+                    "@ghostatron/react-native-cart@4.0.34",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.77",
+                    "@ghostatron/react-native-cart@4.0.35",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.78",
+                    "@ghostatron/react-native-cart@4.0.35",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.80",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.82",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.83",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.84",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.56",
+                    "@ghostatron/react-native-photo@0.1.13"
+                  ]
+                ]
+              },
+              "containerVersion": "7.0.7"
+            },
+            {
+              "name": "17.19",
+              "ernPlatformVersion": "0.7.0",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "58a73c8f9c99054c95a3d3e3056108472c486eba",
+              "nativeDeps": [
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-keep-awake@2.0.4",
+                "react-native-linear-gradient@2.1.0",
+                "react-native-llimageview@0.0.5",
+                "react-native-llphotoassets@0.0.1",
+                "react-native-lluploader@0.0.3",
+                "react-native-location@0.27.0",
+                "react-native-maps@0.13.1",
+                "@ghostatron/react-native-payment-api@0.0.6",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.1",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.3",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.2",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.5",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.1",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.4",
+                "react-native-electrode-bridge@1.5.9",
+                "react-native-fbsdk@0.5.0",
+                "@ghostatron/react-native-easyreturns-api@1.5.2",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.4"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.33",
+                  "@ghostatron/react-native-thankyou@2.0.30",
+                  "@ghostatron/RNEasyReturns@0.0.63",
+                  "@ghostatron/react-native-photo@0.2.6",
+                  "@ghostatron/react-native-checkout@0.0.75"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-checkout@0.0.71",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.59",
+                    "@ghostatron/react-native-photo@0.2.2"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.73",
+                    "@ghostatron/RNEasyReturns@0.0.63",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/react-native-photo@0.2.2"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.74",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/react-native-thankyou@2.0.29",
+                    "@ghostatron/RNEasyReturns@0.0.63",
+                    "@ghostatron/react-native-photo@0.2.2"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.75",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/RNEasyReturns@0.0.63",
+                    "@ghostatron/react-native-photo@0.2.2"
+                  ],
+                  [
+                    "@ghostatron/react-native-photo@0.2.6",
+                    "@ghostatron/react-native-checkout@0.0.75",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-cart@4.0.33",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.77",
+                    "@ghostatron/react-native-cart@4.0.34",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-photo@0.2.6",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.77",
+                    "@ghostatron/react-native-cart@4.0.35",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-photo@0.2.6",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.78",
+                    "@ghostatron/react-native-cart@4.0.35",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-photo@0.2.6",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-photo@0.2.6",
+                    "@ghostatron/RNEasyReturns@0.0.63"
+                  ],
+                  [
+                    "@ghostatron/RNEasyReturns@0.0.66",
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-photo@0.2.6"
+                  ],
+                  [
+                    "@ghostatron/RNEasyReturns@0.0.67",
+                    "@ghostatron/react-native-checkout@0.0.79",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-photo@0.2.6"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.80",
+                    "@ghostatron/RNEasyReturns@0.0.67",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/react-native-photo@0.2.6"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.82",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.67",
+                    "@ghostatron/react-native-photo@0.2.6"
+                  ],
+                  [
+                    "@ghostatron/react-native-checkout@0.0.84",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.67",
+                    "@ghostatron/react-native-photo@0.2.6"
+                  ]
+                ]
+              },
+              "containerVersion": "7.0.19"
+            },
+            {
+              "name": "17.20",
+              "ernPlatformVersion": "0.9.0",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "066cb12c463ba9cbaf7d094eff356d5b8baf2ba5",
+              "nativeDeps": [
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-keep-awake@2.0.4",
+                "react-native-linear-gradient@2.1.0",
+                "react-native-llimageview@0.0.5",
+                "react-native-llphotoassets@0.0.1",
+                "react-native-lluploader@0.0.3",
+                "react-native-location@0.27.0",
+                "react-native-maps@0.13.1",
+                "@ghostatron/react-native-payment-api@0.0.6",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.1",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.3",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.2",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.5",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.1",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.4",
+                "react-native-electrode-bridge@1.5.9",
+                "react-native-fbsdk@0.5.0",
+                "@ghostatron/react-native-easyreturns-api@1.5.2",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.4"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.36",
+                  "@ghostatron/react-native-thankyou@2.0.30",
+                  "@ghostatron/RNEasyReturns@0.0.67",
+                  "@ghostatron/react-native-photo@0.2.8",
+                  "@ghostatron/react-native-checkout@0.0.83"
+                ],
+                "codePush": [
+                  [
+                    "@ghostatron/react-native-checkout@0.0.84",
+                    "@ghostatron/react-native-cart@4.0.36",
+                    "@ghostatron/react-native-thankyou@2.0.30",
+                    "@ghostatron/RNEasyReturns@0.0.67",
+                    "@ghostatron/react-native-photo@0.2.8"
+                  ]
+                ]
+              },
+              "containerVersion": "7.0.22"
+            },
+            {
+              "name": "17.21",
+              "ernPlatformVersion": "0.9.0",
+              "isReleased": true,
+              "binary": null,
+              "yarnlock": "b050f17329b4b600277635f16b18f43c78b52529",
+              "nativeDeps": [
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-keep-awake@2.0.4",
+                "react-native-linear-gradient@2.1.0",
+                "react-native-location@0.27.0",
+                "react-native-maps@0.13.1",
+                "@ghostatron/react-native-payment-api@0.0.6",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.1",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.3",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.2",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.5",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.1",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.4",
+                "react-native-electrode-bridge@1.5.9",
+                "react-native-fbsdk@0.5.0",
+                "@ghostatron/react-native-easyreturns-api@1.5.2",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.4",
+                "react-native-llimageview@0.0.7",
+                "react-native-llphotoassets@0.0.2",
+                "react-native-lluploader@0.0.4"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.37",
+                  "@ghostatron/react-native-thankyou@2.0.33",
+                  "@ghostatron/RNEasyReturns@0.0.67",
+                  "@ghostatron/react-native-photo@0.3.1",
+                  "@ghostatron/react-native-checkout@0.0.86"
+                ],
+                "codePush": []
+              },
+              "containerVersion": "7.0.36"
+            },
+            {
+              "name": "17.22",
+              "ernPlatformVersion": "0.10.1",
+              "isReleased": false,
+              "binary": null,
+              "yarnlock": "d6292d31b3e571022f566997e9e25da4e092ecb2",
+              "nativeDeps": [
+                "react-native@0.42.0",
+                "react-native-code-push@1.17.1-beta",
+                "react-native-keep-awake@2.0.4",
+                "react-native-linear-gradient@2.1.0",
+                "react-native-location@0.27.0",
+                "react-native-maps@0.13.1",
+                "@ghostatron/react-native-payment-api@0.0.6",
+                "@ghostatron/react-native-ghostatronanalytics-api@0.19.1",
+                "@ghostatron/react-native-ghostatroncheckout-api@0.0.3",
+                "@ghostatron/react-native-ghostatroncookie-api@0.18.2",
+                "@ghostatron/react-native-ghostatronheader-api@0.0.5",
+                "@ghostatron/react-native-ghostatronstate-api@0.32.1",
+                "@ghostatron/react-native-ghostatronuserauth-api@0.18.4",
+                "react-native-electrode-bridge@1.5.9",
+                "react-native-fbsdk@0.5.0",
+                "@ghostatron/react-native-easyreturns-api@1.5.2",
+                "@ghostatron/react-native-ghostatronnavigation-api@0.18.4",
+                "react-native-llimageview@0.0.7",
+                "react-native-llphotoassets@0.0.2",
+                "react-native-lluploader@0.0.4",
+                "@ghostatron/react-native-metaheader-api@0.1.0",
+                "@ghostatron/react-native-ghostatron-location-api@0.0.2"
+              ],
+              "miniApps": {
+                "container": [
+                  "@ghostatron/react-native-cart@4.0.40",
+                  "@ghostatron/react-native-thankyou@2.0.35",
+                  "@ghostatron/RNEasyReturns@0.0.72",
+                  "@ghostatron/react-native-photo@0.3.3",
+                  "@ghostatron/react-native-checkout@0.0.87"
+                ],
+                "codePush": []
+              },
+              "containerVersion": "7.0.34"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
